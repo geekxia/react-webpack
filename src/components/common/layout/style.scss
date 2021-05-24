@@ -1,0 +1,68 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.app {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #eee;
+}
+.qf-layout {
+	width: 100%;
+	height: 100%;
+	.ant-layout {
+		height: 100%;
+	}
+	.qf-aside {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		left: 0;
+		overflow-y: auto;
+		.qf-toggle {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 40px;
+			line-height: 40px;
+			color: white;
+			&>span {
+				margin-left: 15px;
+			}
+		}
+	}
+	.ant-layout-content {
+		position: relative;
+		.qf-content {
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			bottom: 15px;
+			right: 15px;
+			overflow: auto;
+			background-color: white;
+			padding: 15px;
+			box-sizing: border-box;
+			&>div {
+				min-width: 900px;
+			}
+		}
+	}
+	.qf-logo {
+		text-align: center;
+		img {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			cursor: pointer;
+			margin: 15px auto;
+		}
+	}
+}

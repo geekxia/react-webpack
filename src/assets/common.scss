@@ -1,0 +1,128 @@
+$color: red;
+$size: 40px;
+
+body {
+	h2 {
+		color: $color;
+		font-size: $size;
+	}
+}
+
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+.blue {
+	color: blue;
+}
+.none {
+	display: none;
+}
+.disp {
+	display: block;
+}
+
+// 自定义modal弹框
+.qf-modal-layer {
+	position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  background-color: rgba(0,0,0,.45);
+	.qf-modal {
+		width: 520px;
+		background: white;
+		border-radius: 3px;
+		position: absolute;
+		top: 150px;
+	  left: 50%;
+		margin-left: -260px;
+		.header {
+			height: 55px;
+			line-height: 55px;
+			overflow: hidden;
+			font-size: 16px;
+			padding: 0 16px;
+			border-bottom: 1px solid #eee;
+			.tip {
+				float: left;
+			}
+			.close {
+				float: right;
+				cursor: pointer;
+			}
+		}
+		.body {
+			padding: 24px;
+			font-size: 14px;
+		}
+		.footer {
+			height: 55px;
+			overflow: hidden;
+			padding: 0 16px;
+			border-top: 1px solid #eee;
+			&>span {
+				float: right;
+				height: 32px;
+				line-height: 32px;
+				font-size: 14px;
+				padding: 0 15px;
+				border-radius: 2px;
+				cursor: pointer;
+				margin-left: 8px;
+				margin-top: 10px;
+				border: 1px solid transparent;
+			}
+			&>span.cancel {
+				border-color: #eee;
+			}
+			&>span.cancel:hover {
+				border-color: blue;
+				color: blue;
+			}
+			&>span.confirm {
+				border-color: blue;
+				background: blue;
+				color: white;
+			}
+			&>span.delete {
+				border-color: red;
+				color: red;
+			}
+		}
+	}
+	.qf-modal-small {
+		font-size: 16px;
+		width: 416px;
+		margin-left: -208px;
+		.body {
+			padding: 16px;
+		}
+		.footer {
+			font-size: 12px;
+		}
+	}
+}
+
+
+// Layout
+.qf-layout {
+	.nav {
+		display: inline-block;
+		padding: 0 10px;
+		a {
+			text-decoration: none;
+			color: black;
+			cursor: pointer;
+		}
+		a.on {
+			color: red;
+			font-weight: bold;
+		}
+	}
+}
